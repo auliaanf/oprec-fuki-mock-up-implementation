@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap');
+
+* {
+    font-family: 'DM sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: inline;
+}
+
+nav, footer {
+    background: #7BBACF;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+    font-weight: bold;
+    overflow: auto;
+    color: #F1F3F6;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.logo {
+    margin-top: 5px;
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+nav button {
+    border-radius: 25px;
+    background-color: #F1F3F6;
+    padding: 5px 20px;
+    color: #7BBACF;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 3px;
+    border: none;
+    transition: 0.3s;
+}
+
+nav button:hover {
+    background-color: black;
+}
+
+main {
+    background: #F1F3F6;
+    padding: 60px 130px;
+    display: flex;
+}
+
+.formulir {
+    flex: 35%;
+}
+
+aside {
+    padding: 0;
+    flex: 40%;
+}
+
+.judul {
+    margin-bottom: 20px;
+    color: #9BBA47;
+}
+
+.tambah-matkul input[type=text], .tambah-matkul textarea, .tambah-matkul select {
+    display: block;
+    width: 100%;
+    background-color: transparent;
+    border-radius: 5px;
+    border-width: 1.8px;
+}
+
+.tambah-matkul input[type=text], .tambah-matkul select {
+    height: 35px;
+}
+
+label {
+    margin: 18px 0 8px;
+}
+
+.submit {
+    text-align: center;
+    margin: auto;
+}
+
+.btn-tambah {
+    align-content: center;
+    display: inline-block;
+    background-color: #7BBACF;
+    color: white;
+    border: none;
+    padding: 7px 32px;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+.btn-tambah:hover {
+    transition: 0.5s;
+    opacity: 0.7;
+}
+
+.space {
+    flex: 10%;
+}
+
+aside .card {
+    background-color: #F1F3F6;
+    padding: 20px 30px;
+    margin-bottom: 50px;
+    border: none;
+    box-shadow: 10px 10px 20px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.01), 
+                0 2px 4px rgba(0,0,0,0.01), 
+                0 4px 8px rgba(0,0,0,0.01), 
+                0 8px 16px rgba(0,0,0,0.01),
+                0 16px 32px rgba(0,0,0,0.01), 
+                0 32px 64px rgba(0,0,0,0.01);
+    }
+}
+
+aside .card:nth-last-child(1) {
+    margin-bottom: 0px;
+}
+
+.card .judul-matkul {
+    color: #7BBACF;
+    margin: 10px 0px;
+}
+
+.info th, .info td {
+    text-align: justify;
+    padding: 5px 0;
+    vertical-align: top;
+}
+
+.info td {
+    padding-left: 25px;
+}
+
+.tambah-tugas th {
+    color: #9BBA47;
+    padding: 30px 0px 0;
+}
+
+.tambah-tugas label {
+    margin: 8px 0 5px;
+}
+
+.tambah-tugas input[type=text], input[type=date] {
+    background-color: transparent;
+    border-radius: 5px;
+    border-width: 1.8px;
+    width: 90%;
+}
+
+.card .btn-tambah {
+    background-color: #9BBA47;
+    margin-top: 15px;
+    transform: scale(0.8);
+}
+
+footer {
+    justify-content: center;
+    padding: 10px 0px 0px;
+    vertical-align: middle;
+    font-weight: lighter;
+}
+
+
+/* belum responsive :") */
+@media (max-width: 576px) {
+    main {
+        flex-direction: column;
+    }
+
+    .space {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+/*footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+} */
